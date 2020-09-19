@@ -1,6 +1,20 @@
 const INITIAL_STATE= {
     sections: [
         {
+          title: 'pants',
+          size: 'large',
+          imageUrl: 'https://images.unsplash.com/photo-1565084888279-aca607ecce0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          id: 4,
+          linkUrl: 'shop/pants'
+        },
+        {
+          title: 'accessories',
+          size: 'large',
+          imageUrl: 'https://images.unsplash.com/3/www.madebyvadim.com.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          id: 5,
+          linkUrl: 'shop/accessories' 
+        },
+        {
           title: 'hats',
           imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
           id: 1,
@@ -20,16 +34,16 @@ const INITIAL_STATE= {
         },
         {
           title: 'womens',
-          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-          size: 'large',
-          id: 4,
+          imageUrl: 'https://images.unsplash.com/photo-1592082397520-a22bec17586b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          size: 'big',
+          id: 7,
           linkUrl: 'shop/womens'
         },
         {
           title: 'mens',
-          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-          size: 'large',
-          id: 5,
+          imageUrl: 'https://images.unsplash.com/photo-1542053254535-def95e944232?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          size: 'big',
+          id: 8,
           linkUrl: 'shop/mens'
         }
       ]

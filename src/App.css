@@ -5,23 +5,11 @@
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 20px 80px;
+    /* background-color: #C5D9D7; */
+    background: linear-gradient(to right, rgb(255, 55, 255), rgb(0, 230, 230));
 }
 
 a {
     text-decoration: none;
     color: black;
-}
-::-webkit-scrollbar {
-    width: 10px;
-}
- 
-::-webkit-scrollbar-track:horizontal {
-  display: none;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #555;
 }

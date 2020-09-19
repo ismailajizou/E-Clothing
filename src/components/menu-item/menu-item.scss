@@ -21,8 +21,12 @@
         opacity: 0.9;
       }
     }
-    
+
     &.large {
+      width: 380px;
+    }
+    
+    &.big {
       height: 380px;
     }
 

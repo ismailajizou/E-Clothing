@@ -1,6 +1,92 @@
 const SHOP_DATA = {
-  hats: {
+  pants: {
     id: 1,
+    title: 'Pants',
+    routeName: 'pants',
+    items: [
+      {
+        id: 36,
+        name: 'Blue ripped jean',
+        imageUrl: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 29
+      },
+      {
+        id: 37,
+        name: 'Blue denim jean',
+        imageUrl: 'https://images.unsplash.com/photo-1555689502-c4b22d76c56f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        price: 25 
+      },
+      {
+        id: 38,
+        name: 'Black jean',
+        imageUrl: 'https://images.unsplash.com/photo-1522774490970-e2baed0c5a39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 27 
+      },
+      {
+        id: 39,
+        name: 'Nike black pants',
+        imageUrl: 'https://images.unsplash.com/photo-1580906853305-5702e648164e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 35
+      },
+    ]
+  },
+    accessories: {
+      id: 2,
+      title: 'Accessories',
+      routeName: 'accessories',
+      items: [
+        {
+          id: 40,
+          name: 'Silver-colored watch',
+          imageUrl: 'https://images.unsplash.com/photo-1509941943102-10c232535736?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          price: 15
+        },
+        {
+          id: 41,
+          name: 'Black & white silver necklace',
+          imageUrl: 'https://images.unsplash.com/photo-1575863438873-999858eddfee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          price: 12
+        },
+        {
+          id: 42,
+          name: 'White beaded necklace',
+          imageUrl: 'https://images.unsplash.com/photo-1560233144-905d47165782?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          price: 10
+        },
+        {
+          id: 43,
+          name: 'Black & brown backpack',
+          imageUrl: 'https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          price: 34
+        },
+        {
+          id: 44,
+          name: 'Blue leather backpack',
+          imageUrl: 'https://images.unsplash.com/photo-1532697057284-bbe526e18cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          price: 38
+        },
+        {
+          id: 45,
+          name: 'Silver rings',
+          imageUrl: 'https://images.unsplash.com/photo-1565206077212-4eb48d41f54b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          price: 23
+        },
+        {
+          id: 46,
+          name: 'Blue Ribbon',
+          imageUrl: 'https://images.unsplash.com/photo-1550595993-1b48b8a3543a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          price: 13
+        },
+        {
+          id: 47,
+          name: 'Red necktie',
+          imageUrl: 'https://images.unsplash.com/photo-1592878995758-02b32ddabdd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          price: 15
+        }
+      ]
+  },
+  hats: {
+    id: 3,
     title: 'Hats',
     routeName: 'hats',
     items: [
@@ -61,7 +147,7 @@ const SHOP_DATA = {
     ]
   },
   sneakers: {
-    id: 2,
+    id: 4,
     title: 'Sneakers',
     routeName: 'sneakers',
     items: [
@@ -82,6 +168,12 @@ const SHOP_DATA = {
         name: 'Black Converse',
         imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
         price: 110
+      },
+      {
+        id: 102,
+        name: 'Black Vans',
+        imageUrl: 'https://images.unsplash.com/photo-1572235752712-925d612ce185?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 92
       },
       {
         id: 13,
@@ -116,10 +208,16 @@ const SHOP_DATA = {
     ]
   },
   jackets: {
-    id: 3,
+    id: 5,
     title: 'Jackets',
     routeName: 'jackets',
     items: [
+      {
+        id: 50,
+        name: 'Gray coat',
+        imageUrl: 'https://images.unsplash.com/photo-1548712370-806c729f72ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+        price: 180
+      },
       {
         id: 18,
         name: 'Black Jean Shearling',
@@ -153,10 +251,16 @@ const SHOP_DATA = {
     ]
   },
   womens: {
-    id: 4,
+    id: 6,
     title: 'Womens',
     routeName: 'womens',
     items: [
+      {
+        id: 101,
+        name: 'Blue denim jumpsuit',
+        imageUrl: 'https://images.unsplash.com/photo-1554141331-0f8829a761b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 32
+      },
       {
         id: 23,
         name: 'Blue Tanktop',
@@ -198,11 +302,17 @@ const SHOP_DATA = {
         name: 'White Blouse',
         imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
         price: 20
+      },
+      {
+        id: 111,
+        name: 'Short pink dress',
+        imageUrl: 'https://images.unsplash.com/photo-1576350591619-5f0841c6cab5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 90
       }
     ]
   },
   mens: {
-    id: 5,
+    id: 7,
     title: 'Mens',
     routeName: 'mens',
     items: [
@@ -213,10 +323,22 @@ const SHOP_DATA = {
         price: 325
       },
       {
+        id: 110,
+        name: 'Black coat',
+        imageUrl: 'https://images.unsplash.com/photo-1557684387-08927d28c72a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 270
+      },
+      {
         id: 31,
         name: 'Floral T-shirt',
         imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
         price: 20
+      },
+      {
+        id: 100,
+        name: 'Blue denim jacket',
+        imageUrl: 'https://images.unsplash.com/photo-1591213954196-2d0ccb3f8d4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 34
       },
       {
         id: 32,
