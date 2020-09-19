@@ -28,6 +28,30 @@ const SHOP_DATA = {
         imageUrl: 'https://images.unsplash.com/photo-1580906853305-5702e648164e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
         price: 35
       },
+      {
+        id: 50,
+        name: 'white pants',
+        imageUrl: 'https://images.unsplash.com/photo-1599664061973-23e9ba37bf8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 35
+      },
+      {
+        id: 51,
+        name: 'Gray pants',
+        imageUrl: 'https://images.unsplash.com/photo-1520367745676-56196632073f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 29
+      },
+      {
+        id: 52,
+        name: 'Black  & white pants',
+        imageUrl: 'https://images.unsplash.com/photo-1596935884282-53fe4c38d607?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 41
+      },
+      {
+        id: 53,
+        name: '"Get ready" black leggings',
+        imageUrl: 'https://images.unsplash.com/photo-1592218772868-1329f536d344?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 47
+      },
     ]
   },
     accessories: {
@@ -247,7 +271,19 @@ const SHOP_DATA = {
         name: 'Tan Trench',
         imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
         price: 185
-      }
+      },
+      {
+        id: 60,
+        name: 'Black bubble jacket',
+        imageUrl: 'https://images.unsplash.com/photo-1559675845-d208bb8d253a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 160
+      },
+      {
+        id: 61,
+        name: 'Blue & white Nike jacket',
+        imageUrl: 'https://images.unsplash.com/photo-1585418245040-2cc3bdad2b62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        price: 168
+      },
     ]
   },
   womens: {
