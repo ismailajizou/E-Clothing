@@ -10,6 +10,9 @@ import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
 import CheckoutPage from './pages/checkout/checkout';
 import AboutPage from './pages/about/about';
+import { selectCurrentUser } from './redux/user/user.selectors';
+import { createStructuredSelector } from 'reselect';
+
 
 class App extends React.Component {
   unsubscribeFromAuth = null ;
@@ -20,7 +23,6 @@ class App extends React.Component {
       if(userAuth){
         const userRef = await createUserProfileDocument(userAuth);
         
-
         userRef.onSnapshot(snapShot => {
           setCurrentUser({
                 id: snapShot.id,
@@ -28,7 +30,7 @@ class App extends React.Component {
               });
         });
     }
-    setCurrentUser(userAuth)
+    setCurrentUser(userAuth);
     });
   }
 
@@ -58,12 +60,16 @@ class App extends React.Component {
   );
   }
 }
+
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser
+})
  
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
 export default connect(
-  null, 
+  mapStateToProps, 
   mapDispatchToProps
   )(App) ;
