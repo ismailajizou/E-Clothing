@@ -34,7 +34,7 @@ const INITIAL_STATE= {
         },
         {
           title: 'womens',
-          imageUrl: 'https://images.unsplash.com/photo-1592082397520-a22bec17586b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+          imageUrl: 'https://images.unsplash.com/photo-1589076371066-23bfd3fc3814?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
           size: 'big',
           id: 7,
           linkUrl: 'shop/womens'

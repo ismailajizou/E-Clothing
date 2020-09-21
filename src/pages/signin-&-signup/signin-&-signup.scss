@@ -3,5 +3,12 @@
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
+
+    @media screen and (max-width: 800px){
+      display: block;
+      justify-content: center;
+      width: 80vw;
+      margin: 10px;
+    }
   }
   
