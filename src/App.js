@@ -7,7 +7,6 @@ import Spinner from './components/spinner/spinner';
 import useCartReducer from './utils/reducers/cartReducer';
 import CartCtx from './utils/contextFiles/cart.context';
 import UserCtx from './utils/contextFiles/user.context';
-import firebaseConfig from './firebase/firebase.config';
 
 const HomePage = lazy(() => import('./pages/homepage/HomePage'));
 const ShopPage = lazy(() => import('./pages/shop/Shop'));
@@ -18,7 +17,6 @@ const AboutPage = lazy(() => import('./pages/about/about'));
 const App = () => {
   const [ {hidden, totalPrice, count, cartItems}, dispatch ] = useCartReducer();
   const [currentUser, setCurrentUser] = useState({});
-  console.log(firebaseConfig);
   useEffect(() => {
     const unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if(userAuth){
