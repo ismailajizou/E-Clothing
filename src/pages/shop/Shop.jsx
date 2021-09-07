@@ -20,7 +20,6 @@ const ShopPage = ({ match }) =>  {
             setCollections(pertsistedCollections);
             setLoading(false)
         } else {
-            console.log("second")
             const unsubscribe = firestore.collection('collections').onSnapshot(async snapshot => {
                 const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
                 setCollections(collectionsMap);
