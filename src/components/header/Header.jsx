@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 import './Header.scss'
 import { auth } from '../../firebase/firebase.utils';
-import { connect } from 'react-redux';
 import CartIcon from '../cart-icon/cart-icon';
 import CartDropdown from '../cart-dropdown/cart-dropdown';
+import CartCtx from '../../utils/contextFiles/cart.context';
+import UserCtx from '../../utils/contextFiles/user.context';
 
-const Header = ({currentUser, hidden}) => ( 
+const Header = () => {
+    const [{ hidden }] = useContext(CartCtx);
+    const { currentUser } = useContext(UserCtx);
+    return (
         <div className='header'>
             <Link className='logo-container' to='/'>
                 <Logo className='logo'/>
@@ -27,15 +31,9 @@ const Header = ({currentUser, hidden}) => (
                 }
                 <CartIcon/>
             </div>
-            {
-                hidden ? null : <CartDropdown />
-            }
+            { !hidden && <CartDropdown /> }
         </div>
-     );
- 
-const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
-    currentUser,
-    hidden
-});
+    );
+} 
 
-export default connect(mapStateToProps)(Header) ;
+export default Header;
