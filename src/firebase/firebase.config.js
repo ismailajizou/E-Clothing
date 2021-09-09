@@ -1,12 +1,23 @@
+const {
+    REACT_APP_FIREBASE_API_KEY,
+    REACT_APP_FIREBASE_AUTH_DOMAIN,
+    REACT_APP_FIREBASE_DB_URL,
+    REACT_APP_FIREBASE_PID,
+    REACT_APP_FIREBASE_STORAGE_BUCKET,
+    REACT_APP_FIREBASE_MSID,
+    REACT_APP_FIREBASE_APP_ID,
+    REACT_APP_FIREBASE_MID
+} = process.env;
+
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: "e-clothing-db-2e653.firebaseapp.com",
-    databaseURL:process.env.REACT_APP_FIREBASE_DB_URL,
-    projectId: "e-clothing-db-2e653",
-    storageBucket: "e-clothing-db-2e653.appspot.com",
-    messagingSenderId: "23529814391",
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
-    measurementId: "G-MHFYBVCZ7Z"
+    apiKey: REACT_APP_FIREBASE_API_KEY,
+    authDomain: REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: REACT_APP_FIREBASE_DB_URL,
+    projectId: REACT_APP_FIREBASE_PID,
+    storageBucket: REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: REACT_APP_FIREBASE_MSID,
+    appId: REACT_APP_FIREBASE_APP_ID,
+    measurementId: REACT_APP_FIREBASE_MID
 };
 
 export default firebaseConfig;

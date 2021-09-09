@@ -1,11 +1,12 @@
 import React from 'react';
-import { withRouter } from 'react-router';
+import { useParams } from 'react-router';
 import CollectionItem from '../../components/collection-item/collection-item';
 import { useCollectionWithURL } from '../../utils/customHooks/shopHooks';
 import './collection.scss';
 
-const CollectionPage = ({match}) => {
-    const collection = useCollectionWithURL(match.params.collectionId);
+const CollectionPage = () => {
+    const { collectionId } = useParams()
+    const collection = useCollectionWithURL(collectionId);
     const { title, items } = collection;
     return ( 
         <div className='collection-page'>
@@ -19,4 +20,4 @@ const CollectionPage = ({match}) => {
      );
 }
  
-export default withRouter(CollectionPage);
+export default CollectionPage;
