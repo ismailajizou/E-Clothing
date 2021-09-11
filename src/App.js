@@ -30,8 +30,8 @@ const App = () => {
     }
       setCurrentUser(userAuth);
     });
-    return () => unsubscribeFromAuth()
-  }, [setCurrentUser])
+    return unsubscribeFromAuth;
+  }, [])
   
   return (
     <UserCtx.Provider value={{currentUser, setCurrentUser}}>
